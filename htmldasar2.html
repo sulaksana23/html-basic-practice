@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Belajar HTML Dasar #2: Tag dan Elemen HTML</title>
+  <meta name="description" content="Memahami konsep tag dan elemen HTML secara bertahap untuk menulis struktur halaman web yang rapi dan benar.">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #0b1220;
+      color: #e8eefc;
+      margin: 0;
+      padding: 24px;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+    .content {
+      padding: 20px;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+    .meta {
+      font-size: 14px;
+      color: rgba(232,238,252,.7);
+      margin-bottom: 14px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-right: 8px;
+      border: 1px solid rgba(255,255,255,.15);
+      background: rgba(0,0,0,.25);
+    }
+    h2 {
+      margin-top: 26px;
+      font-size: 18px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin: 6px 0;
+    }
+    .lesson {
+      background: rgba(0,0,0,.25);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 12px;
+      padding: 14px;
+      margin: 12px 0;
+      color: rgba(232,238,252,.85);
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <article class="card">
+      <img
+        src="https://images.unsplash.com/photo-1581092580492-0c391fbe0c63?q=80&w=800"
+        alt="Belajar HTML Dasar #2: Tag dan Elemen HTML"
+      >
+
+      <div class="content">
+        <h1>Belajar HTML Dasar #2: Tag dan Elemen HTML</h1>
+
+        <div class="meta">
+          Kategori: Frontend Development • Bahasa: HTML • Framework: Vanilla • Instruktur: SantriKoding
+        </div>
+
+        <p>
+          Memahami konsep tag dan elemen HTML secara bertahap untuk menulis struktur
+          halaman web yang rapi dan benar.
+        </p>
+
+        <div>
+          <span class="badge">⏱️ 25 Menit</span>
+          <span class="badge">✨ Beginner</span>
+          <span class="badge">🆔 id: 3</span>
+        </div>
+
+        <h2>📌 Kurikulum</h2>
+        <ul>
+          <li>Apa itu Tag dalam HTML?</li>
+          <li>Apa itu Elemen HTML?</li>
+          <li>Elemen HTML yang Umum Digunakan</li>
+          <li>Elemen yang Tidak Memiliki Tag Penutup</li>
+          <li>Nesting: Menyusun Elemen di Dalam Elemen</li>
+          <li>Kesimpulan</li>
+        </ul>
+
+        <h2>📖 Materi</h2>
+
+        <div class="lesson">
+          Tag HTML adalah instruksi yang ditulis menggunakan tanda kurung sudut
+          (<code>&lt; &gt;</code>) untuk memberi tahu browser bagaimana sebuah konten
+          harus ditampilkan. Biasanya tag memiliki pasangan pembuka dan penutup,
+          seperti <code>&lt;p&gt;</code> dan <code>&lt;/p&gt;</code>.
+        </div>
+
+        <div class="lesson">
+          Elemen HTML adalah satu kesatuan lengkap yang terdiri dari tag pembuka,
+          isi konten, dan tag penutup. Contoh elemen paragraf:
+          <code>&lt;p&gt;Ini paragraf&lt;/p&gt;</code>.
+        </div>
+
+        <div class="lesson">
+          Elemen HTML yang umum digunakan antara lain heading
+          (<code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code>), paragraf
+          (<code>&lt;p&gt;</code>), link (<code>&lt;a&gt;</code>), gambar
+          (<code>&lt;img&gt;</code>), list, dan container
+          (<code>&lt;div&gt;</code>).
+        </div>
+
+        <div class="lesson">
+          Beberapa elemen tidak memiliki tag penutup (void elements),
+          seperti <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>,
+          <code>&lt;img&gt;</code>, dan <code>&lt;input&gt;</code>.
+        </div>
+
+        <div class="lesson">
+          Nesting adalah menyusun elemen di dalam elemen lain. Contoh yang benar:
+          <code>&lt;p&gt;Teks &lt;strong&gt;penting&lt;/strong&gt;&lt;/p&gt;</code>.
+          Penulisan nesting yang rapi membuat HTML tetap valid.
+        </div>
+
+        <div class="lesson">
+          Dengan memahami perbedaan tag dan elemen HTML, kamu sudah memiliki
+          fondasi kuat sebelum lanjut ke CSS dan JavaScript.
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
