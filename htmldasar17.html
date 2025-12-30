@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Embed Media</title>
+</head>
+<body>
+  <header>
+    <h1>Profil Produk</h1>
+    <p>Lihat demo singkat dan lokasi kami melalui media yang disematkan.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="judul-video">
+      <h2 id="judul-video">Video Demo</h2>
+      <figure>
+        <video controls width="640">
+          <source src="demo.mp4" type="video/mp4" />
+          Browser Anda tidak mendukung video.
+        </video>
+        <figcaption>Video demo fitur utama (contoh penggunaan elemen &lt;video&gt;).</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="judul-audio">
+      <h2 id="judul-audio">Audio (Opsional)</h2>
+      <figure>
+        <audio controls>
+          <source src="intro.mp3" type="audio/mpeg" />
+          Browser Anda tidak mendukung audio.
+        </audio>
+        <figcaption>Audio intro singkat (contoh penggunaan elemen &lt;audio&gt;).</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="judul-iframe">
+      <h2 id="judul-iframe">Peta Lokasi</h2>
+      <p>Berikut contoh embed Google Maps menggunakan iframe:</p>
+      <iframe
+        title="Lokasi Kantor"
+        src="https://www.google.com/maps?q=Denpasar,+Bali&output=embed"
+        width="100%"
+        height="320"
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section aria-labelledby="judul-youtube">
+      <h2 id="judul-youtube">YouTube (Alternatif)</h2>
+      <p>Jika Anda punya video YouTube, Anda bisa embed seperti ini:</p>
+      <iframe
+        title="Video YouTube"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        loading="lazy"
+        allowfullscreen
+      ></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Produk Kita</p>
+  </footer>
+</body>
+</html>
